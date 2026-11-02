@@ -81,7 +81,7 @@ export const AdminLayout: React.FC<AdminLayoutProps> = ({ onBackToWebsite }) => 
                   <Sparkles className="w-4 h-4" />
                 </span>
                 <span className="font-serif text-lg font-medium tracking-tight text-white">
-                  {businessSettings.business_name || 'Yarpyae Beauty'}
+                  ရာပြည့် (Yarpyae)
                 </span>
               </div>
             </div>

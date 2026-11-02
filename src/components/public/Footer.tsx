@@ -22,9 +22,14 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAdmin }) => {
               <span className="w-8 h-8 rounded-full bg-[#3B2C24] flex items-center justify-center text-[#D9A592]">
                 <Sparkles className="w-4 h-4" />
               </span>
-              <span className="font-serif text-xl sm:text-2xl font-medium tracking-tight">
-                {businessSettings.business_name || 'Glow & Glam Beauty Salon & Spa'}
-              </span>
+              <div className="flex items-baseline gap-2">
+                <span className="font-serif text-xl sm:text-2xl font-bold tracking-tight text-white">
+                  ရာပြည့်
+                </span>
+                <span className="text-xs sm:text-sm font-medium text-[#D9A592] tracking-wide">
+                  {language === 'my' ? 'အလှပြင်ဆလွန်း' : 'Beauty Salon'}
+                </span>
+              </div>
             </div>
             <p className="text-xs sm:text-sm text-[#A89E96] leading-relaxed max-w-sm">
               {t.footer.tagline}

@@ -11,12 +11,12 @@ interface NavbarProps {
 
 export const Navbar: React.FC<NavbarProps> = ({ onOpenAdmin, onBookClick }) => {
   const { businessSettings, isAdmin } = useSalon();
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   return (
     <header className="sticky top-0 z-40 bg-[#FAF8F5]/95 backdrop-blur-md border-b border-[#EAE3DC] transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-6 sm:gap-8">
-        {/* Zone 1: Brand Wordmark (Single text element) */}
+        {/* Zone 1: Brand Wordmark (Single text element with default Burmese brand) */}
         <a
           href="#home"
           className="group flex items-center gap-2.5 text-[#241F1C] whitespace-nowrap shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C69F77] rounded"
@@ -24,9 +24,14 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenAdmin, onBookClick }) => {
           <span className="w-8 h-8 rounded-full bg-[#EFE3DA] flex items-center justify-center text-[#9E6D59] group-hover:bg-[#E8D4C8] transition-colors">
             <Sparkles className="w-4 h-4" />
           </span>
-          <span className="font-serif text-lg sm:text-2xl font-medium tracking-tight">
-            {businessSettings.business_name || 'Yarpyae Beauty Salon'}
-          </span>
+          <div className="flex items-baseline gap-2">
+            <span className="font-serif text-xl sm:text-2xl font-bold tracking-tight text-[#241F1C]">
+              ရာပြည့်
+            </span>
+            <span className="text-xs sm:text-sm font-medium text-[#726861] tracking-wide">
+              {language === 'my' ? 'အလှပြင်ဆလွန်း' : 'Beauty Salon'}
+            </span>
+          </div>
         </a>
 
         {/* Zone 2: Clean 4-5 Navigation Links (single line, no pill enclosures) */}
