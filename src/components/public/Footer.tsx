@@ -75,7 +75,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAdmin }) => {
             <div className="space-y-2.5 text-xs text-[#D1C7BD]">
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-[#D9A592] shrink-0 mt-0.5" />
-                <span>{language === 'my' ? 'စမ်းချောင်း၊ ရန်ကုန်' : (businessSettings.business_address || 'Sanchaung, Yangon')}</span>
+                <span>{language === 'my' ? 'အမှတ် ၄၄၊ ရတနာ့ဂူဘုရားလမ်း၊ အမရပူရ' : (businessSettings.business_address || 'No 44, Yadanagu Pagoda Road, Amarapura')}</span>
               </div>
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-[#D9A592] shrink-0" />
@@ -83,7 +83,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAdmin }) => {
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-[#D9A592] shrink-0" />
-                <span>{businessSettings.business_email || 'hello@glowandglam.com'}</span>
+                <span>{businessSettings.business_email || 'hello@yarpyaebeautysalon.com'}</span>
               </div>
             </div>
           </div>
@@ -91,11 +91,11 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAdmin }) => {
 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#8A7E75]">
-          <p>© {new Date().getFullYear()} {businessSettings.business_name}. {t.footer.rightsReserved}</p>
+          <p>© {new Date().getFullYear()} {businessSettings.business_name || 'Yarpyae Beauty Salon'}. {t.footer.rightsReserved}</p>
           <div className="flex items-center gap-6">
             <span>{t.footer.byAppointment}</span>
             <span aria-hidden="true">·</span>
-            <span>{language === 'my' ? 'စမ်းချောင်း၊ ရန်ကုန်' : 'Sanchaung, Yangon'}</span>
+            <span>{language === 'my' ? 'အမရပူရ' : 'Amarapura'}</span>
           </div>
         </div>
       </div>

@@ -60,7 +60,7 @@ export const AdminBusinessSettings: React.FC = () => {
   };
 
   const handleSeedDefaults = async () => {
-    if (!window.confirm('Do you want to seed default Glow & Glam salon settings, hours, and initial services to your Supabase project?')) {
+    if (!window.confirm('Do you want to seed default Yarpyae Beauty Salon settings, hours, and initial services to your Supabase project?')) {
       return;
     }
     setSeeding(true);
@@ -123,7 +123,7 @@ export const AdminBusinessSettings: React.FC = () => {
               required
               value={businessName}
               onChange={(e) => setBusinessName(e.target.value)}
-              placeholder="Glow & Glam Beauty Salon & Spa"
+              placeholder="Yarpyae Beauty Salon"
               className="w-full px-4 py-2.5 bg-[#FAF8F5] border border-[#DDD0C5] rounded-xl text-xs text-[#241F1C] focus:outline-none focus:ring-1 focus:ring-[#C69F77]"
             />
           </div>
@@ -138,7 +138,7 @@ export const AdminBusinessSettings: React.FC = () => {
               required
               value={businessEmail}
               onChange={(e) => setBusinessEmail(e.target.value)}
-              placeholder="hello@glowandglam.com"
+              placeholder="hello@yarpyaebeautysalon.com"
               className="w-full px-4 py-2.5 bg-[#FAF8F5] border border-[#DDD0C5] rounded-xl text-xs text-[#241F1C] focus:outline-none focus:ring-1 focus:ring-[#C69F77]"
             />
           </div>
@@ -168,7 +168,7 @@ export const AdminBusinessSettings: React.FC = () => {
               required
               value={businessAddress}
               onChange={(e) => setBusinessAddress(e.target.value)}
-              placeholder="Sanchaung, Yangon"
+              placeholder="No 44, Yadanagu Pagoda Road, Amarapura"
               className="w-full px-4 py-2.5 bg-[#FAF8F5] border border-[#DDD0C5] rounded-xl text-xs text-[#241F1C] focus:outline-none focus:ring-1 focus:ring-[#C69F77]"
             />
           </div>

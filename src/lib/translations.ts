@@ -155,13 +155,13 @@ export const translations: Record<Language, Translations> = {
       adminDashboard: 'Admin Dashboard',
     },
     hero: {
-      kicker: 'Bespoke Beauty Care · Sanchaung, Yangon',
+      kicker: 'Bespoke Beauty Care · Amarapura',
       headline: 'Where Artistry Meets Pure Serenity',
       subtitle:
-        'Immerse yourself in bespoke beauty rituals, botanical hydration therapies, and couture makeup artistry tailored to your individual radiance at Glow & Glam Beauty Salon & Spa.',
+        'Immerse yourself in bespoke beauty rituals, botanical hydration therapies, and couture makeup artistry tailored to your individual radiance at Yarpyae Beauty Salon.',
       scheduleVisit: 'Schedule Your Visit',
       exploreServices: 'Explore Services',
-      ratingText: '4.9 / 5 Rating from over 350+ cherished clients in Yangon',
+      ratingText: '4.9 / 5 Rating from over 350+ cherished clients in Amarapura & Mandalay',
       suiteTitle: 'Signature Suite Experience',
       suiteSubtitle: 'Private consultations & tranquil treatment rooms',
       reserveNow: 'Reserve Now',
@@ -212,7 +212,7 @@ export const translations: Record<Language, Translations> = {
     about: {
       kicker: 'Our Philosophy & Sanctuary',
       headline: 'Dedicated to Elevated Care, Calm Luxury, and Natural Confidence',
-      p1: 'Founded on the belief that beauty rituals should be restorative for the mind as well as transformative for the skin, Glow & Glam brings together world-class aesthetic techniques and a serene, private lounge environment.',
+      p1: 'Founded on the belief that beauty rituals should be restorative for the mind as well as transformative for the skin, Yarpyae Beauty Salon brings together world-class aesthetic techniques and a serene, private lounge environment.',
       p2: 'Whether you are preparing for a wedding celebration, refreshing with our signature hydrating facials, or perfecting your everyday brow architecture, our licensed specialists give you undivided focus and warm personal care.',
       stampTitle: 'Pure Elegance',
       stampDesc: 'Organic botanicals, bespoke artistry & clinical hygiene standards.',
@@ -229,7 +229,7 @@ export const translations: Record<Language, Translations> = {
       kicker: 'The Client Journey',
       headline: 'Three Steps to Timeless Radiance',
       subtitle:
-        'Every detail of your visit to Glow & Glam is curated for unhurried comfort, personal diagnostic attention, and lasting beauty results.',
+        'Every detail of your visit to Yarpyae Beauty Salon is curated for unhurried comfort, personal diagnostic attention, and lasting beauty results.',
       step1Title: 'Diagnostic Skin Consultation',
       step1Desc:
         'We begin with a gentle moisture barrier analysis and aesthetic consultation to tailor formulations specifically to your complexion.',
@@ -331,13 +331,13 @@ export const translations: Record<Language, Translations> = {
       adminDashboard: 'စီမံခန့်ခွဲမှု ဒက်ရှ်ဘုတ်',
     },
     hero: {
-      kicker: 'အထူးသီးသန့် အလှပြုပြင်မှု · စမ်းချောင်း၊ ရန်ကုန်',
+      kicker: 'အထူးသီးသန့် အလှပြုပြင်မှု · ရတနာ့ဂူဘုရားလမ်း၊ အမရပူရ',
       headline: 'အနုပညာဆန်သောအလှတရားနှင့် အေးချမ်းမှုတို့ ဆုံဆည်းရာ',
       subtitle:
-        'စမ်းချောင်း၊ ရန်ကုန်မြို့ရှိ Glow & Glam Beauty Salon & Spa တွင် သင့်အတွက် သီးသန့် အသားအရေထိန်းသိမ်းမှု၊ ရေဓာတ်ဖြည့်ပေါင်းတင်ခြင်းနှင့် မင်္ဂလာပွဲတက် အလှပြင်မိတ်ကပ် ဝန်ဆောင်မှုများကို စိတ်ချမ်းမြေ့စွာ ခံစားလိုက်ပါ။',
+        'အမရပူရမြို့၊ ရတနာ့ဂူဘုရားလမ်းရှိ ရာပြည့် အလှပြင်ဆလွန်း (Yarpyae Beauty Salon) တွင် သင့်အတွက် သီးသန့် အသားအရေထိန်းသိမ်းမှု၊ ရေဓာတ်ဖြည့်ပေါင်းတင်ခြင်းနှင့် မင်္ဂလာပွဲတက် အလှပြင်မိတ်ကပ် ဝန်ဆောင်မှုများကို စိတ်ချမ်းမြေ့စွာ ခံစားလိုက်ပါ။',
       scheduleVisit: 'ရက်ချိန်းရယူရန်',
       exploreServices: 'ဝန်ဆောင်မှုများ ကြည့်ရှုရန်',
-      ratingText: 'ရန်ကုန်မြို့ရှိ အထူးအားပေးသော မိတ်ဟောင်းမိတ်သစ် ၃၅၀+ ကျော်ထံမှ ၄.၉/၅ ရမှတ် ရရှိထားပါသည်',
+      ratingText: 'အမရပူရနှင့် မန္တလေးမြို့ရှိ အထူးအားပေးသော မိတ်ဟောင်းမိတ်သစ် ၃၅၀+ ကျော်ထံမှ ၄.၉/၅ ရမှတ် ရရှိထားပါသည်',
       suiteTitle: 'သီးသန့် ဆလွန်းခန်းမ အတွေ့အကြုံ',
       suiteSubtitle: 'သီးသန့် အခန်းတွင်း သေချာစွာ ဂရုစိုက် ပြုပြင်ပေးခြင်း',
       reserveNow: 'ယခု ကြိုတင်စာရင်းသွင်းပါ',
@@ -388,7 +388,7 @@ export const translations: Record<Language, Translations> = {
     about: {
       kicker: 'ကျွန်ုပ်တို့၏ ခံယူချက်နှင့် အလှပြင်ခန်းမ',
       headline: 'အဆင့်အတန်းမြင့် ဂရုစိုက်မှု၊ အေးချမ်းမှုနှင့် သဘာဝယုံကြည်မှုအတွက် ရည်ရွယ်ပါသည်',
-      p1: 'အလှအပ ပြုပြင်ခြင်းသည် ခန္ဓာကိုယ်သာမက စိတ်နှလုံးကိုပါ လန်းဆန်းစေရမည်ဟူသော ခံယူချက်ဖြင့် Glow & Glam ကို စမ်းချောင်းမြို့နယ်တွင် တည်ထောင်ခဲ့ပါသည်။',
+      p1: 'အလှအပ ပြုပြင်ခြင်းသည် ခန္ဓာကိုယ်သာမက စိတ်နှလုံးကိုပါ လန်းဆန်းစေရမည်ဟူသော ခံယူချက်ဖြင့် ရာပြည့် အလှပြင်ဆလွန်း (Yarpyae Beauty Salon) ကို အမရပူရမြို့၊ ရတနာ့ဂူဘုရားလမ်းတွင် တည်ထောင်ခဲ့ပါသည်။',
       p2: 'မင်္ဂလာအခမ်းအနားအတွက် ပြင်ဆင်လိုသည်ဖြစ်စေ၊ အသားအရေ ရေဓာတ်ဖြည့်လိုသည်ဖြစ်စေ၊ မျက်ခုံးနှင့် မျက်တောင် အလှဆင်လိုသည်ဖြစ်စေ ကျွန်ုပ်တို့၏ ကျွမ်းကျင်သူများက နွေးထွေးစွာ ဝန်ဆောင်မှုပေးပါမည်။',
       stampTitle: 'စင်ကြယ်သော အလှတရား',
       stampDesc: 'သဘာဝထုတ်ကုန်များ၊ အနုစိတ်လက်ရာနှင့် ဆေးဘက်ဝင် သန့်ရှင်းရေးစံနှုန်းများ။',
@@ -405,7 +405,7 @@ export const translations: Record<Language, Translations> = {
       kicker: 'ဧည့်သည်တော်များ၏ အတွေ့အကြုံ',
       headline: 'ထာဝရ တောက်ပသော အလှဆီသို့ အဆင့် ၃ ဆင့်',
       subtitle:
-        'Glow & Glam သို့ လာရောက်လည်ပတ်မှုတိုင်းကို အလျင်စလိုမရှိစေဘဲ စိတ်အေးချမ်းသာစွာဖြင့် အကောင်းဆုံးရလဒ်ရရှိရန် စီစဉ်ထားပါသည်။',
+        'ရာပြည့် အလှပြင်ဆလွန်း (Yarpyae Beauty Salon) သို့ လာရောက်လည်ပတ်မှုတိုင်းကို အလျင်စလိုမရှိစေဘဲ စိတ်အေးချမ်းသာစွာဖြင့် အကောင်းဆုံးရလဒ်ရရှိရန် စီစဉ်ထားပါသည်။',
       step1Title: 'အသားအရေ စစ်ဆေးဆွေးနွေးခြင်း',
       step1Desc:
         'သင့်အသားအရေ ရေဓာတ်အခြေအနေကို သေချာစွာ စစ်ဆေးပြီး အသင့်တော်ဆုံး ပေါင်းတင်ဆေးရည်များကို ရွေးချယ်ပေးပါသည်။',
@@ -472,7 +472,7 @@ export const translations: Record<Language, Translations> = {
     },
     footer: {
       tagline:
-        'စမ်းချောင်းမြို့နယ်ရှိ နာမည်ကျော် ဘိုတစ်အလှပြင်ဆလွန်းဖြစ်ပြီး သဘာဝမျက်နှာပေါင်းတင်ခြင်း၊ မင်္ဂလာပွဲတက်မိတ်ကပ်နှင့် မျက်ခုံးမျက်တောင် ပြုပြင်ခြင်းတို့ကို သီးသန့်အေးချမ်းစွာ ဝန်ဆောင်မှုပေးနေပါသည်။',
+        'အမရပူရမြို့နယ်၊ ရတနာ့ဂူဘုရားလမ်းရှိ နာမည်ကျော် ဘိုတစ်အလှပြင်ဆလွန်းဖြစ်ပြီး သဘာဝမျက်နှာပေါင်းတင်ခြင်း၊ မင်္ဂလာပွဲတက်မိတ်ကပ်နှင့် မျက်ခုံးမျက်တောင် ပြုပြင်ခြင်းတို့ကို သီးသန့်အေးချမ်းစွာ ဝန်ဆောင်မှုပေးနေပါသည်။',
       adminLink: 'ဆလွန်းပိုင်ရှင်နှင့် မန်နေဂျာ ဝင်ရောက်ရန်',
       scheduleTitle: 'ဆလွန်းဖွင့်ချိန်များ',
       monSat: 'တနင်္လာ – စနေ',

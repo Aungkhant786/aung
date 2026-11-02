@@ -608,10 +608,10 @@ export const SalonProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     try {
       // 1. Insert settings
       await supabase.from('business_settings').upsert({
-        business_name: 'Glow & Glam Beauty Salon & Spa',
-        business_email: 'hello@glowandglam.com',
+        business_name: 'Yarpyae Beauty Salon',
+        business_email: 'hello@yarpyaebeautysalon.com',
         business_phone: '+95 9 789 223 344',
-        business_address: 'Sanchaung, Yangon',
+        business_address: 'No 44, Yadanagu Pagoda Road, Amarapura',
         slot_interval_minutes: 30,
         booking_notice_hours: 2,
       });

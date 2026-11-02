@@ -2,10 +2,10 @@ import { BusinessHours, BusinessSettings, Service } from '../types';
 
 export const DEFAULT_BUSINESS_SETTINGS: BusinessSettings = {
   id: 'default-settings',
-  business_name: 'Glow & Glam Beauty Salon & Spa',
-  business_email: 'hello@glowandglam.com',
+  business_name: 'Yarpyae Beauty Salon',
+  business_email: 'hello@yarpyaebeautysalon.com',
   business_phone: '+95 9 789 223 344',
-  business_address: 'Sanchaung, Yangon',
+  business_address: 'No 44, Yadanagu Pagoda Road, Amarapura',
   slot_interval_minutes: 30,
   booking_notice_hours: 2,
 };

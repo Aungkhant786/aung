@@ -53,7 +53,7 @@ export const AdminLayout: React.FC<AdminLayoutProps> = ({ onBackToWebsite }) => 
       <div className="md:hidden bg-[#241F1C] text-white px-4 py-3 flex items-center justify-between border-b border-[#3B2C24]">
         <div className="flex items-center gap-2">
           <ShieldCheck className="w-5 h-5 text-[#D9A592]" />
-          <span className="font-serif font-medium text-sm">Glow & Glam Manager</span>
+          <span className="font-serif font-medium text-sm">{businessSettings.business_name || 'Yarpyae Beauty Salon'}</span>
         </div>
         <div className="flex items-center gap-2">
           <LanguageToggle variant="admin" />
@@ -81,7 +81,7 @@ export const AdminLayout: React.FC<AdminLayoutProps> = ({ onBackToWebsite }) => 
                   <Sparkles className="w-4 h-4" />
                 </span>
                 <span className="font-serif text-lg font-medium tracking-tight text-white">
-                  Glow & Glam
+                  {businessSettings.business_name || 'Yarpyae Beauty'}
                 </span>
               </div>
             </div>

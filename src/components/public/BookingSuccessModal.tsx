@@ -121,10 +121,10 @@ export const BookingSuccessModal: React.FC<BookingSuccessModalProps> = ({
           <div className="space-y-0.5">
             <p className="font-medium text-[#241F1C] flex items-center gap-1.5">
               <MapPin className="w-3.5 h-3.5 text-[#9E6D59]" />
-              {businessSettings.business_name}
+              {businessSettings.business_name || 'Yarpyae Beauty Salon'}
             </p>
             <p className="text-[#726861]">
-              {language === 'my' ? 'စမ်းချောင်း၊ ရန်ကုန်' : businessSettings.business_address} · {businessSettings.business_phone}
+              {language === 'my' ? 'အမှတ် ၄၄၊ ရတနာ့ဂူဘုရားလမ်း၊ အမရပူရ' : (businessSettings.business_address || 'No 44, Yadanagu Pagoda Road, Amarapura')} · {businessSettings.business_phone}
             </p>
           </div>
           <Sparkles className="w-5 h-5 text-[#C69F77] shrink-0" />

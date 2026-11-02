@@ -62,7 +62,7 @@ export const AdminLogin: React.FC<AdminLoginProps> = ({ onBackToWebsite }) => {
             Salon Management
           </h2>
           <p className="text-xs text-[#726861]">
-            Glow & Glam Beauty Salon & Spa · Sanchaung, Yangon
+            Yarpyae Beauty Salon · No 44, Yadanagu Pagoda Road, Amarapura
           </p>
         </div>
 

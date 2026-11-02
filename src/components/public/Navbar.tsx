@@ -25,7 +25,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenAdmin, onBookClick }) => {
             <Sparkles className="w-4 h-4" />
           </span>
           <span className="font-serif text-lg sm:text-2xl font-medium tracking-tight">
-            {businessSettings.business_name || 'Glow & Glam Beauty Salon & Spa'}
+            {businessSettings.business_name || 'Yarpyae Beauty Salon'}
           </span>
         </a>
 

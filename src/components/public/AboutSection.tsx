@@ -26,10 +26,10 @@ export const AboutSection: React.FC = () => {
 
               <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-white/95 backdrop-blur-md border border-[#EAE3DC] shadow-sm">
                 <p className="font-serif text-sm font-semibold text-[#241F1C]">
-                  {businessSettings.business_name || 'Glow & Glam Beauty Salon & Spa'}
+                  {businessSettings.business_name || 'Yarpyae Beauty Salon'}
                 </p>
                 <p className="text-xs text-[#726861] mt-0.5">
-                  {language === 'my' ? 'စမ်းချောင်းမြို့နယ်၏ အေးချမ်းသော အချက်အချာနေရာတွင် တည်ရှိပါသည်။' : 'Located in the tranquil center of Sanchaung, Yangon.'}
+                  {language === 'my' ? 'အမှတ် ၄၄၊ ရတနာ့ဂူဘုရားလမ်း၊ အမရပူရတွင် တည်ရှိပါသည်။' : 'Located at No 44, Yadanagu Pagoda Road, Amarapura.'}
                 </p>
               </div>
             </div>

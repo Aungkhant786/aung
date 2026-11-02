@@ -42,7 +42,7 @@ export const AdminOverview: React.FC<AdminOverviewProps> = ({ onNavigate }) => {
             Salon Command Center
           </p>
           <h2 className="font-serif text-2xl sm:text-3xl text-white">
-            {businessSettings.business_name || 'Glow & Glam Beauty Salon & Spa'}
+            {businessSettings.business_name || 'Yarpyae Beauty Salon'}
           </h2>
           <p className="text-xs sm:text-sm text-[#D1C7BD] leading-relaxed">
             Manage your daily appointment bookings, edit treatment services, adjust business hours, and update salon preferences.

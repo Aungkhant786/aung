@@ -98,7 +98,7 @@ export const Hero: React.FC<HeroProps> = ({ onBookClick }) => {
             </div>
             <div>
               <p className="text-xs text-[#726861] uppercase tracking-wider font-medium">{t.hero.locationLabel}</p>
-              <p className="text-sm font-semibold text-[#241F1C] truncate">{language === 'my' ? 'စမ်းချောင်း၊ ရန်ကုန်' : (businessSettings.business_address || 'Sanchaung, Yangon')}</p>
+              <p className="text-sm font-semibold text-[#241F1C] truncate">{language === 'my' ? 'အမှတ် ၄၄၊ ရတနာ့ဂူဘုရားလမ်း၊ အမရပူရ' : (businessSettings.business_address || 'No 44, Yadanagu Pagoda Road, Amarapura')}</p>
             </div>
           </div>
 

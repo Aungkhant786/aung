@@ -20,10 +20,10 @@ CREATE TABLE IF NOT EXISTS services (
 -- 2. Business Settings table (Salon business information)
 CREATE TABLE IF NOT EXISTS business_settings (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  business_name TEXT NOT NULL DEFAULT 'Glow & Glam Beauty Salon & Spa',
-  business_email TEXT NOT NULL DEFAULT 'hello@glowandglam.com',
+  business_name TEXT NOT NULL DEFAULT 'Yarpyae Beauty Salon',
+  business_email TEXT NOT NULL DEFAULT 'hello@yarpyaebeautysalon.com',
   business_phone TEXT NOT NULL DEFAULT '+95 9 789 223 344',
-  business_address TEXT NOT NULL DEFAULT 'Sanchaung, Yangon',
+  business_address TEXT NOT NULL DEFAULT 'No 44, Yadanagu Pagoda Road, Amarapura',
   slot_interval_minutes INTEGER NOT NULL DEFAULT 30,
   booking_notice_hours INTEGER NOT NULL DEFAULT 2,
   created_at TIMESTAMPTZ NOT NULL DEFAULT now()
@@ -129,7 +129,7 @@ CREATE POLICY "Admins manage admin_users" ON admin_users
 
 -- Salon business settings
 INSERT INTO business_settings (business_name, business_email, business_phone, business_address, slot_interval_minutes, booking_notice_hours)
-VALUES ('Glow & Glam Beauty Salon & Spa', 'hello@glowandglam.com', '+95 9 789 223 344', 'Sanchaung, Yangon', 30, 2)
+VALUES ('Yarpyae Beauty Salon', 'hello@yarpyaebeautysalon.com', '+95 9 789 223 344', 'No 44, Yadanagu Pagoda Road, Amarapura', 30, 2)
 ON CONFLICT DO NOTHING;
 
 -- Business hours (Mon - Sat: 9:00 AM - 7:00 PM | Sun: 10:00 AM - 4:00 PM)
