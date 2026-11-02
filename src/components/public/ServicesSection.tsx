@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSalon } from '../../context/SalonContext';
 import { useLanguage } from '../../context/LanguageContext';
-import { getServiceImage } from '../../lib/images';
+import { getServiceImage, getServiceFallbackImage } from '../../lib/images';
 import { Service } from '../../types';
 import { Clock, Check } from 'lucide-react';
 
@@ -33,6 +33,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {activeServices.map((service) => {
             const imageUrl = getServiceImage(service.name);
+            const fallbackUrl = getServiceFallbackImage(service.name);
 
             // Check if there is a Myanmar translation for this service
             const translatedInfo = t.services.serviceNames[service.name];
@@ -54,6 +55,12 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
+                    onError={(e) => {
+                      const target = e.currentTarget;
+                      if (target.src !== fallbackUrl) {
+                        target.src = fallbackUrl;
+                      }
+                    }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
 

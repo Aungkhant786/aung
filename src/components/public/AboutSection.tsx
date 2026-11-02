@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSalon } from '../../context/SalonContext';
 import { useLanguage } from '../../context/LanguageContext';
-import { SALON_IMAGES } from '../../lib/images';
+import { SALON_IMAGES, FALLBACK_IMAGES } from '../../lib/images';
 import { ShieldCheck, Heart, Sparkles, Feather } from 'lucide-react';
 
 export const AboutSection: React.FC = () => {
@@ -17,10 +17,16 @@ export const AboutSection: React.FC = () => {
             <div className="relative rounded-2xl overflow-hidden border border-[#E8DFD7] shadow-xl aspect-[4/3] bg-[#EAE0D6]">
               <img
                 src={SALON_IMAGES.about}
-                alt="Glow and Glam Beauty Salon reception lounge with natural travertine counter and warm minimalist arches"
+                alt="Yarpyae Beauty Salon reception lounge with natural travertine counter and warm minimalist arches"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"
                 loading="lazy"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (target.src !== FALLBACK_IMAGES.about) {
+                    target.src = FALLBACK_IMAGES.about;
+                  }
+                }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
 

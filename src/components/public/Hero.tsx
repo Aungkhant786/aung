@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSalon } from '../../context/SalonContext';
 import { useLanguage } from '../../context/LanguageContext';
-import { SALON_IMAGES } from '../../lib/images';
+import { SALON_IMAGES, FALLBACK_IMAGES } from '../../lib/images';
 import { ArrowDown, Clock, MapPin, Phone, Star } from 'lucide-react';
 
 interface HeroProps {
@@ -66,10 +66,16 @@ export const Hero: React.FC<HeroProps> = ({ onBookClick }) => {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-[#E8DFD7] aspect-[16/10] sm:aspect-[16/9] lg:aspect-[4/3] bg-[#EAE0D6]">
               <img
                 src={SALON_IMAGES.hero}
-                alt="Glow and Glam luxury beauty salon interior with arched golden vanity mirrors and serene boucle seating"
+                alt="Yarpyae Beauty Salon interior with arched vanity mirrors and serene seating"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 loading="eager"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (target.src !== FALLBACK_IMAGES.hero) {
+                    target.src = FALLBACK_IMAGES.hero;
+                  }
+                }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
 
