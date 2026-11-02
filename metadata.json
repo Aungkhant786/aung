@@ -1,0 +1,8 @@
+{
+  "name": "Glow & Glam Beauty Salon & Spa",
+  "description": "Luxury beauty salon booking system and appointment management dashboard in Sanchaung, Yangon.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

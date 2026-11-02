@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, "Noto Sans Myanmar", serif;
+  --font-sans: "Plus Jakarta Sans", "Noto Sans Myanmar", system-ui, sans-serif;
+}
+
+:root {
+  font-family: "Plus Jakarta Sans", "Noto Sans Myanmar", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #FAF8F5;
+  color: #241F1C;
+}
+
+.font-serif {
+  font-family: "Playfair Display", Georgia, "Noto Sans Myanmar", serif;
+}
+
+.font-sans {
+  font-family: "Plus Jakarta Sans", "Noto Sans Myanmar", system-ui, sans-serif;
+}
+
+/* Custom smooth luxury touches */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.2) sepia(0.2);
+  cursor: pointer;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #E2D7CF;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C4B5A8;
+}
